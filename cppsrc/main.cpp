@@ -16,12 +16,12 @@ Napi::Object Init(Napi::Env env, Napi::Object exports) {
     
     //Accessor
     Napi::PropertyDescriptor pd1 = Napi::PropertyDescriptor::Accessor(env,
-							  obj,
+							  exports,
 							  "pd1",
 							  Get,
 							  Set);
 
-
+ 
     exports.DefineProperties({pd1});
 
     return exports;
