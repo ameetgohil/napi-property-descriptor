@@ -1,0 +1,27 @@
+{
+			"name": "napi-property-descriptor",
+			"version": "0.0.1",
+			"main": "index.js",
+			"dependencies": {
+						"cmake-js": "^5.1.0",
+						"lodash": "latest",
+						"node-addon-api": "latest"
+			},
+			"scripts": {
+						"rebuild": "cmake-js rebuild",
+						"build": "cmake-js compile",
+						"clean": "cmake-js clean && make clean",
+						"all": "npm run build && npm run test",
+						"test": "node index.js"
+			},
+			"repository": {
+						"type": "git",
+						"url": "git+https://github.com/ameetgohil/napi-property-descriptor.git"
+			},
+			"bugs": {
+						"url": "https://github.com/ameetgohil/napi-property-descriptor/issues"
+			},
+			"homepage": "https://github.com/ameetgohil/napi-property-descriptor#readme",
+			"author": "Ameet Gohil",
+			"license": "MIT"
+}
