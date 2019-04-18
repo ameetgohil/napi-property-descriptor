@@ -20,7 +20,6 @@ Napi::Object Init(Napi::Env env, Napi::Object exports) {
 							  "pd1",
 							  Get,
 							  Set);
-
  
     exports.DefineProperties({pd1});
 
